@@ -1990,15 +1990,13 @@ function showDashboard() {
         <p style="font-size: 12px; color: #777; margin-top: 15px; margin-bottom: 0;"></p>
         <h4 style="color: #2c3e50; margin-top: 0; margin-bottom: 15px;">● Pour toute question ou problème </h4>       
                 <ul>
-                <a href="https://github.com/4CSC6545D56S/Reglementation-CTS" target="_blank" style="color: #0056b3; text-decoration: none;">
+                <a href="https://github.com/fi-regie/reglementation-CTS-" target="_blank" style="color: #0056b3; text-decoration: none;">
                 <li><strong>Ouvrir le dépôts</strong><br>
-                <small style="color: #666;">https://github.com/4CSC6545D56S/Reglementation-CTS</small>
+                <small style="color: #666;">https://github.com/fi-regie/reglementation-CTS-</small>
             </a>
         </li>
-
-
-             
-                <a href="https://github.com/4CSC6545D56S/Reglementation-CTS/blob/main/README.md" target="_blank" style="color: #0056b3; text-decoration: none;">
+           
+                <a href="https://github.com/fi-regie/reglementation-CTS-/blob/main/README.md%20s" target="_blank" style="color: #0056b3; text-decoration: none;">
                 <li><strong>Consulter la documentation</strong><br>
                 <small style="color: #666;">[documentation] (README.md)</small>
             </a>

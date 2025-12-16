@@ -1,10 +1,26 @@
-# 📋 Règlementation CTS - Application Web 
+# 🛡 Règlementation CTS - Application Web
 
 Application web complète pour la consultation interactive de la réglementation officielle CTS - Chapiteaux, Tentes et Structures.
 
 ## 🎯 Objectif
 
-Fournir aux professionnels du spectacle, régisseurs, exploitants un outil de consultation de la réglementation CTS appliquable aux établissements de type Chapiteaux, Tentes & Structures.
+Fournir aux professionnels du spectacle, régisseurs, exploitants, étudiants un outil de consultation
+de la réglementation CTS applicable aux établissements de type Chapiteaux, Tentes & Structures.
+
+## ⚙️ Installation et Utilisation
+
+### 🌐 Option 1 : Utilisation en ligne
+
+** Lien direct** > https://fi-regie.github.io/reglementation-CTS-/
+
+### 📵 Option 2 : Utilisation Local
+
+**Créez un Dossier / Local** >  “Réglementation CTS”
+**Accédez au dépôt** > https://github.com/fi-regie/reglementation-CTS-
+**Téléchargez/Copiez les 3 fichiers**  >  index.html / script.js / style.css
+**Ouvrez le fichier** > index.html dans votre navigateur web
+**Naviguez** > L'application fonctionne hors ligne directement dans votre  votre navigateur
+
 
 ## ✨ Fonctionnalités
 
@@ -23,65 +39,8 @@ Fournir aux professionnels du spectacle, régisseurs, exploitants un outil de co
 ### 📚 **Contenu Exhaustif**
 - **81 articles complets** reproduits fidèlement du document officiel
 - **Structure hiérarchique** exacte (5 sous-chapitres, 21 sections)
-- **Texte réglementaire exact** extrait du Journal Officiel > https://www.legifrance.gouv.fr/codes/section_lc/JORFTEXT000000290033/LEGISCTA000020370853/
+- **Texte réglementaire exact** extrait du Journal Officiel >
 - **Métadonnées complètes** pour chaque article (type, section, chapitre)
-
-### 🔧 **Fonctionnalités Techniques**
-- **Sans base de données** - tout le contenu est intégré dans l'application
-- **Sans dépendances externes** - fonctionne avec HTML/CSS/JS natif
-- **Navigation par URL** (hash-based) pour le partage d'articles
-- **Interface entièrement en français**
-
-## 🏗️ Structure du Projet
-
-```
-reglementation-cts/
-│
-├── index.html              # Application principale
-├── README.md              # Ce fichier
-│
-├── FONCTIONNALITES.md     # Documentation détaillée
-├── ARCHITECTURE.md        # Structure technique
-│
-└── assets/                # Ressources (optionnel)
-    ├── images/
-    ├── css/
-    └── js/
-```
-
-##  Installation et Utilisation
-
-### Option 1 : Utilisation Directe (Recommandée)
-1. **Téléchargez** le fichier `index.html`
-2. **Ouvrez-le** dans votre navigateur web
-3. **C'est tout !** L'application fonctionne sans installation
-
-### Option 2 : Hébergement Local
-```bash
-# Clonez le dépôt
-git clone https://github.com/votre-utilisateur/reglementation-cts.git
-
-# Accédez au dossier
-cd reglementation-cts
-
-# Ouvrez dans votre navigateur
-# Sous macOS
-open index.html
-
-# Sous Linux
-xdg-open index.html
-
-# Sous Windows
-start index.html
-```
-
-### Option 3 : Hébergement Web
-Déployez sur n'importe quel service d'hébergement statique :
-- GitHub Pages
-- Netlify
-- Vercel
-- Serveur web traditionnel (Apache, Nginx)
-
 ## 📖 Guide d'Utilisation
 
 ### Navigation Basique
@@ -100,19 +59,40 @@ Déployez sur n'importe quel service d'hébergement statique :
 - `Échap` : Efface la recherche
 - `Flèches` : Navigation dans les résultats
 
-## 📱 Compatibilité
+### 🔧 **Fonctionnalités Techniques**
+- **Sans base de données** - tout le contenu est intégré dans l'application
+- **Sans dépendances externes** - fonctionne avec HTML/CSS/JS natif
+- **Navigation par URL** (hash-based) pour le partage d'articles
 
-### Navigateurs Supportés
-- ✅ Chrome 60+
-- ✅ Firefox 60+
-- ✅ Safari 12+
-- ✅ Edge 79+
-- ✅ Opera 50+
-
-### Responsive Design
+### 🔗 Responsive Design
 - **Ordinateur** : Interface complète avec barre latérale
 - **Tablette** : Interface adaptée, barre latérale réduisible
 - **Mobile** : Interface optimisée, navigation full-screen
+
+## 📱 Compatibilité
+### Navigateurs Supportés
+- ✔️ Chrome 60+
+- ✔️ Firefox 60+
+- ✔️ Safari 12+
+
+
+## 🏗️ Structure du Projet
+
+```
+reglementation-cts/
+│
+├── index.html     		 # Application principale
+├── README.md     		 # Ce fichier
+│
+├── FONCTIONNALITES.md     # Documentation détaillée
+├── ARCHITECTURE.md   	 # Structure technique
+│
+└── assets/       		 # Ressources (optionnel)
+    ├── images/
+    ├── css/
+    └── js/
+```
+
 
 ## 📊 Structure des Données
 
@@ -158,14 +138,6 @@ SOUS CHAPITRE 5 (21 articles)
 └── SECTION X : EXPLOITATION (6 articles)
 ```
 
-⚠️ Cette application est un outil de consultation et ne se substitue pas :
-- Aux textes officiels publiés
-- À l'avis d'experts certifiés
-- Aux commissions de sécurité compétentes
-- À la jurisprudence en vigueur
-
-- textes officiels >  https://www.legifrance.gouv.fr/codes/section_lc/JORFTEXT000000290033/LEGISCTA000020370853/
-
 ## 🔧 Développement
 
 ### Structure du Code
@@ -174,25 +146,25 @@ SOUS CHAPITRE 5 (21 articles)
 CTS_DATA = {
     metadata: { ... },
     sousChapitres: [
-        {
-            id: "sc1",
-            titre: "...",
-            sections: [
-                {
-                    id: "s1-1",
-                    titre: "...",
-                    articles: [
-                        {
-                            id: "cts1",
-                            numero: "ARTICLE CTS 1",
-                            titre: "...",
-                            contenu: "...",
-                            type: "..."
-                        }
-                    ]
-                }
-            ]
-        }
+   	 {
+   		 id: "sc1",
+   		 titre: "...",
+   		 sections: [
+       		 {
+           		 id: "s1-1",
+           		 titre: "...",
+           		 articles: [
+               		 {
+                   		 id: "cts1",
+                   		 numero: "ARTICLE CTS 1",
+                   		 titre: "...",
+                   		 contenu: "...",
+                   		 type: "..."
+               		 }
+           		 ]
+       		 }
+   		 ]
+   	 }
     ]
 }
 ```
@@ -209,8 +181,7 @@ CTS_DATA = {
 - Notes personnelles
 
 
-
-## 🤝 Contribution
+## 👥 Contribution
 
 Les contributions sont les bienvenues ! Voici comment contribuer :
 
@@ -226,43 +197,36 @@ Les contributions sont les bienvenues ! Voici comment contribuer :
 - Indentation : 4 espaces
 - Validation HTML5/CSS3
 
-## 📄 Licence
+## ®️ Licence
 
-Ce projet est sous licences libres > content/fr/documentation/licences-libres-dinum.md
+Ce projet est sous licence libre > content/fr/documentation/licences-libres-dinum.md
 
 ## 🙏 Remerciements
 
 - **Communauté des régisseurs et exploitants** pour les retours
-- **Contributors** pour les améliorations
-
- ---  
+- **Contributors** pour les propositions / améliorations
 
 ## 📞 Support
 
-● Liens Utiles
+## Pour toute question / problème / proposition / amélioration
+- Ouvrir le dépôts > https://github.com/fi-regie/reglementation-CTS-
+- Consulter la documentation > [documentation] (README.md)
+- Contact > philippe.potier-regie@proton.me
 
-    Règlement de sécurité ERP
-    Règlement de sécurité contre les risques d'incendie et de panique dans les établissements recevant du public (ERP)
-    Sécurité des personnes
-    Sécurité des personnes contre les risques d'incendie (Articles D141-1 à R146-35)
-    Personnel de sécurité incendie
-    Arrêté du 2 mai 2005 relatif aux missions, à l'emploi et à la qualification du personnel des services de sécurité incendie des ERP
+##  l'Application ne se substitue pas :
 
-● Pour toute question ou problème
+- Aux textes officiels publiés
+- À l'avis d'experts certifiés
+- Aux commissions de sécurité compétentes
+- À la jurisprudence en vigueur
 
-    Ouvrir le dépôts
-    https://github.com/4CSC6545D56S/Reglementation-CTS
+⚠️ Ce document reproduit intégralement la réglementation officielle CTS à titre pédagogique. Pour toute application concrète, se référer aux textes officiels publiés au Journal Officiel. >
 
-    Consulter la documentation
-    [documentation](README.md)
+## Journal Officiel > réglementation CTS Chapiteaux, Tentes et Structures >  
 
-    Contact : Phi
-    philippe.potier-regie@proton.me
+https://www.legifrance.gouv.fr/codes/section_lc/JORFTEXT000000290033/LEGISCTA000020370853/
 
- ---   
 
-**Développé par Phi/DeepSeek V3.2 à l'usage des professionnels du spectacle** 🎪
 
-⚠️ Ce document reproduit intégralement la réglementation officielle CTS à titre pédagogique. Pour toute application concrète, se référer aux textes officiels publiés au Journal Officiel. 
 
-Journal Officiel > réglementation CTS Chapiteaux, Tentes et Structures >  https://www.legifrance.gouv.fr/codes/section_lc/JORFTEXT000000290033/LEGISCTA000020370853/
+

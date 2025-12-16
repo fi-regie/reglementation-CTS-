@@ -1996,7 +1996,7 @@ function showDashboard() {
             </a>
         </li>
            
-                <a href="https://github.com/fi-regie/reglementation-CTS-/blob/main/README.md%20" target="_blank" style="color: #0056b3; text-decoration: none;">
+                <a href="https://github.com/fi-regie/reglementation-CTS-/blob/main/README.md" target="_blank" style="color: #0056b3; text-decoration: none;">
                 <li><strong>Consulter la documentation</strong><br>
                 <small style="color: #666;">[documentation] (README.md)</small>
             </a>

@@ -2006,8 +2006,7 @@ function showDashboard() {
                 <li><strong>Contact</strong><br>
                 <small style="color: #666;">philippe.potier-regie@proton.me</small>
             </a>
-        </li>
-               
+        </li>     
                 
             </ul>           
         </div>

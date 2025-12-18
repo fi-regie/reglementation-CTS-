@@ -4,7 +4,7 @@ const CTS_DATA = {
     metadata: {
         title: "Règlementation C.T.S.",
         version: "Document Officiel",
-        lastUpdate: "Version PDF",
+        lastUpdate: "Version Web",
         totalArticles: 81
     },
 
@@ -1664,28 +1664,21 @@ function showDashboard() {
     };
 
     content.innerHTML = `
-        <div class="dashboard">
-            <h2>Règlementation CTS</h2>
-            <p class="subtitle">Dispositions applicables aux établissements de type Chapiteaux, Tentes et Structures.</p>
 
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">${stats.total}</div>
-                    <div class="stat-label">Articles</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">${stats.sécurité}</div>
-                    <div class="stat-label">Sécurité</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">${stats.construction}</div>
-                    <div class="stat-label">Construction</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">${stats.administration}</div>
-                    <div class="stat-label">Administration</div>
-                </div>
+    <div class="recent-articles">
+    <h2>Règlementation CTS - Dispositions applicables aux établissements de type Chapiteaux, Tentes et Structures.</h2>
+    <p class="subtitle">La sécurité dans le spectacle vivant repose sur une réglementation stricte définie par le Code de la Construction et de l'Habitation (CCH). 
+    Les lieux de spectacles sont classés comme ERP (Établissements Recevant du Public) de Type L. Ce tableau de bord interactif vous permet d'explorer la réglementation officielle CTS à usage pédagogique. Pour toute application concrète se référer aux textes publiés au Journal Officiel. 
+</p>
+
+    <div class="articles-grid">
+        <div class="">
+        © Décembre 2025 . Règlementation CTS basé sur les textes officiels (CCH, Arrêté du 25 juin 1980).
             </div>
+        </div>
+    </div>
+
+           
             
             <div class="quick-access">
                 <h3>🔍 Recherche rapide dans le texte officiel</h3>
@@ -2006,7 +1999,8 @@ function showDashboard() {
                 <li><strong>Contact</strong><br>
                 <small style="color: #666;">philippe.potier-regie@proton.me</small>
             </a>
-        </li>     
+        </li>
+               
                 
             </ul>           
         </div>
@@ -2023,6 +2017,7 @@ function showDashboard() {
         </div>
         
     `;
+    
 
     // Configurer la recherche rapide
     setupQuickSearch();
